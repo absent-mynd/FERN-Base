@@ -1,10 +1,9 @@
 # FERN-Base
 A base template for working with the Google Firestore, Express, React, Node.js tech stack.  
 ***
-## Quick Setup
-### Google Firebase Firestore & Authentication 
+## Quick Start
 The section will guide you through setting up a Google Firebase project with a Firestore database 
-and enable user authentication via Google Authentication.  
+and enable user authentication via Google Authentication, and configuring the project to utilize it.
 
 1.  Login to the [Firebase Console](https://console.firebase.google.com), click '+ Add Project', and follow the prompts 
 to set up a new Firebase project.
@@ -23,3 +22,16 @@ with its content
 Project Settings -> Service Accounts, in the Node.js code snippet.
 
 Firebase has now been configured and is ready to use.
+***
+## Running the Project
+There are two servers to run - the api server and the react frontend server.  Initialize both by running 
+
+    npm install
+    
+from the project root directory and from the client directory.  To run the project, 
+start up the api server followed by the frontend server by running
+
+    npm start
+    
+in the project root directory followed by the client directory.  The website is available at 
+```localhost:3000``` and the api server handles requests on ```localhost:5000```.
